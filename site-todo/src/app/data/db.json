@@ -1,0 +1,24 @@
+{
+  "tarefas": [{
+      "Id": "1",
+      "Titulo": "Varrer a casa",
+      "Descricao": "varrer o primeiro andar e passar aspirador no segundo andar",
+      "Data": "2022-05-09T11:10:10.011Z",
+      "Concluida": false
+    },
+    {
+      "Id": "2",
+      "Titulo": "Tirar carne do congelador",
+      "Descricao": "verificar qual carne vamos comer",
+      "Data": "2022-05-09T00:00:00.000Z",
+      "Concluida": false
+    },
+    {
+      "Id": "3",
+      "Titulo": "Marcar consulta medica",
+      "Descricao": "marcar consulta para pedir exames de sangue",
+      "Data": "2022-05-09T00:00:00.000Z",
+      "Concluida": false
+    }
+  ]
+}

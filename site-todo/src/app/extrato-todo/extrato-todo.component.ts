@@ -1,4 +1,6 @@
+import { TarefaService } from './../services/tarefa.service';
 import { Component, OnInit } from '@angular/core';
+import { Tarefa } from '../models/tarefa.model';
 
 @Component({
   selector: 'app-extrato-todo',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./extrato-todo.component.scss']
 })
 export class ExtratoTodoComponent implements OnInit {
+    tarefas: Tarefa[] = [];
 
-  constructor() { }
+  constructor(private service: TarefaService) { }
 
   ngOnInit(): void {
+    this.service.todas().subscribe((tarefas: Tarefa[])=>{
+      this.tarefas = tarefas;
+    });
   }
-
 }
